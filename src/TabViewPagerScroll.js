@@ -119,7 +119,7 @@ export default class TabViewPagerScroll<T: Route<*>>
         keyboardShouldPersistTaps="always"
         scrollEnabled={this.props.swipeEnabled}
         automaticallyAdjustContentInsets={false}
-        bounces={false}
+        bounces={this.props.bounces || false}
         alwaysBounceHorizontal={false}
         scrollsToTop={false}
         showsHorizontalScrollIndicator={false}
